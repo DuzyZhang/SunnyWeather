@@ -5,9 +5,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import com.sunnyweather.android.databinding.PlaceItemBinding
-import com.sunnyweather.android.logic.network.Place
+import com.sunnyweather.android.logic.model.PlaceResponse
 
-class PlaceAdapter(private val fragment: Fragment,private val placeList: List<Place>):
+class PlaceAdapter(private val fragment: Fragment,private val placeList: List<PlaceResponse.Place>):
         RecyclerView.Adapter<PlaceAdapter.ViewHolder>() {
 
     inner class ViewHolder( val itemBinding: PlaceItemBinding): RecyclerView.ViewHolder(itemBinding.root)
